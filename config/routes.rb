@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  resources :titles
   root 'home#index'
-
+  get 'demo', to: 'home#demo'
   resources :universities
   resources :experts
   resources :expertises

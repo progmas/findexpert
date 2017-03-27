@@ -4,8 +4,9 @@ class CreateExperts < ActiveRecord::Migration[5.0]
       t.string :name
       t.string :surname
       t.references :city, foreign_key: true
-      t.integer :title
-
+      t.references :university, foreign_key: true
+      t.references :expertise, foreign_key: true
+      t.references :title, foreign_key: true
       t.timestamps
     end
   end

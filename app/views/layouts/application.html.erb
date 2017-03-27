@@ -70,19 +70,19 @@
 							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tanımlar<strong class="caret"></strong></a>
 							<ul class="dropdown-menu">
 								<li>
-									<a href="#">Ülke</a>
+									<%= link_to "Ülke", countries_path %>
 								</li>
 								<li>
-									<a href="#">Şehir</a>
+									<%= link_to "Şehir", cities_path %>
 								</li>
 								<li>
-									<a href="#">Üniversite</a>
+									<%= link_to "Üniversite", universities_path %>
 								</li>
 								<li>
-									<a href="#">Uzmanlık</a>
+									<%= link_to "Uzmanlık", expertises_path %>
 								</li>
 								<li>
-									<a href="#">Uzman</a>
+									<%= link_to "Uzman", experts_path %>
 								</li>
 							</ul>
 						</li>
@@ -93,7 +93,6 @@
 			<div class="row">
 				 <%= yield %>
 			</div>
-			
 		</div>
 	</div>
 	<div class="row">
@@ -104,10 +103,21 @@
 			<p>
 				Sorgulamak istediğiniz kriterleri girerek en uygun uzmanları listeyebiliriniz. Uzmanlık alanına aralarına virgül koyarak birden fazla anahtar kelime girebilirsiniz.
 			</p>
+			<h2>
+				Tanımlar: 
+			</h2>
+			<p>
+				<%= link_to "Ülke", countries_path %> | 
+				<%= link_to "Şehir", cities_path %> | 
+				<%= link_to "Üniversite", universities_path %> | 
+				<%= link_to "Uzmanlık", expertises_path %> | 
+				<%= link_to "Uzman", experts_path %> | 
+				<%= link_to "Ünvan", titles_path %> | 
+				<%= link_to "DEMO", 'demo' %> | 
+			</p>
 		</div>
 	</div>
 </div>
-
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>

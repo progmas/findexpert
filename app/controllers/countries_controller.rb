@@ -30,6 +30,7 @@ class CountriesController < ApplicationController
       if @country.save
         format.html { redirect_to @country, notice: 'Country was successfully created.' }
         format.json { render :show, status: :created, location: @country }
+        format.xml  { render :xml => @country }
       else
         format.html { render :new }
         format.json { render json: @country.errors, status: :unprocessable_entity }
